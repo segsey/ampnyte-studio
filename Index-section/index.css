@@ -1,0 +1,154 @@
+/* nav bar start */
+.navbar-toggler{
+    border: none;        /* Removes the border */
+    background: transparent; /* Removes the default gray background */
+}
+/* nav bar end */
+
+/* hero-section start */
+.hero-section{
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-content-position{
+    position: absolute;
+    top: 60%;
+}
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-gradient-text{
+  /* The gradient colors */
+  background: linear-gradient(90deg, #9747ff, #00f5ff, #ffff);
+
+  /* Clip the background to the text */
+  -webkit-background-clip: text; /* for Chrome, Safari */
+  background-clip: text;         /* for Firefox */
+
+  /* Make the text itself transparent */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari */
+  color: transparent;                   /* fallback */
+}
+.hero-start-btn:link,.hero-start-btn:visited{
+    position: relative;
+    display: inline-block;
+    color: #ffff;
+    background: #9747ff;
+    text-decoration: none;
+    transition: ease 0.3s color;
+    overflow: hidden; /* to clip the fill */
+}
+.hero-start-btn:hover{
+    color: #0a1a3b;
+}
+.hero-see-project-btn {
+    position: relative;
+    display: inline-block;
+    color: #fff;                      /* text color before fill */
+    text-decoration: none;
+    outline: 2px solid #fff;
+    overflow: hidden;                 /* hide overflow */
+    transition: color 0.4s ease;      /* text color transition */
+}
+
+/* the fill bar */
+.hero-see-project-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;                     /* start outside left */
+    width: 100%;
+    height: 100%;
+    background-color: #9747ff;        /* fill color */
+    z-index: 0;
+    transition: left 0.5s cubic-bezier(0.77,0,0.175,1); /* smooth ease */
+}
+
+/* hover triggers fill */
+.hero-see-project-btn:hover::before {
+    left: 0;                         /* fill slides left → right */
+}
+
+/* keep text on top */
+.hero-see-project-btn span,
+.hero-see-project-btn {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+/* text color after fill */
+.hero-see-project-btn:hover {
+    color: #000;                     /* contrast for readability */
+}
+
+
+/* Phones */
+@media (max-width: 576px) {
+    .hero-section{
+    background-image: url(./hero-img/workspace-wallpaper-sm.jpg);
+  }
+}
+/* Tablets */
+@media screen and (max-width: 950px) and (min-width: 577px) {
+    .hero-section{
+    background-image: url(./hero-img/workspace-wallpaper-md.jpg);
+  }
+}
+/* Small laptops */
+@media screen and (max-width: 992px) and (min-width: 951px) {
+  .hero-section{
+    background-image: url(./hero-img/workspace-wallpaper-lg.jpg);
+  }
+
+}
+/* Desktops */
+@media (min-width: 1200px) {
+  .hero-section{
+    background-image: url(./hero-img/workspace-wallpaper-xl.jpg);
+  }
+}
+
+
+/* hero-section end  */
+
+/* about/value  proposition start */
+.tinos-bold{
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.icon-bg{
+    background-color: #9747ff28;
+}
+.abt-us-btn:link{
+    background-color: #0a1a3b;
+}
+.abt-us-btn:visited{
+    background-color: #071229;
+    color: #d1d5db;
+    outline: 2px solid #9747ff;
+}
+.abt-us-btn:hover{
+    font-size: larger;
+}
+.abt-us-btn:active{
+    background-color: #071229;
+}
+/* about/value  proposition end */
+
+/* our services start */
+.our-services-heading{
+    color: #0a1a3b;
+}
+/* our services end */
+
+/* testimonials start */
+.testimonials-bg{
+    background: linear-gradient(to bottom, #ffffff 40%, #9747ff 75%, #0a1a3b 100%);
+}
+/* testimonials end */

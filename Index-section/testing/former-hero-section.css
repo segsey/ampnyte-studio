@@ -1,0 +1,10 @@
+/* hero start */
+.hero-section{
+    background: url(hero-img.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* hero end */

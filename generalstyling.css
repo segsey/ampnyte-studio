@@ -1,0 +1,56 @@
+/* nav bar section start */
+.nav-link-current{
+    color: #0a1a3b;
+    font-weight: bold;
+}
+.nav-link-inactive:hover{
+    font-size: larger;
+}
+.hire-us-link:link,.hire-us-link:visited{
+    background: #0a1a3b;
+    color: white;
+    transition: background 0.4s ease;
+    transition: padding 0.4s ease;
+}
+.hire-us-link:hover{
+    background: #0c2c6d;
+}
+/* nav bar section end */
+
+/* cta */
+.cta-bg-deepBlue{
+    background-color: #0a1a3b;
+}
+.cta-bg-purple{
+    background-color: #9747ff;
+}
+.contact-us-cta:hover{
+    background-color: white;
+    color: #0a1a3b;
+    transition: ease 0.5s;
+}
+/* cta end */
+
+/* copyrights start */
+.copyright-bg{
+    background-color: #01081a;
+}
+.copyright-link:link{
+    color: white;
+    text-decoration: none;
+}
+.copyright-link:hover{
+    color: purple;
+    transition: ease 0.3s color;
+}
+.social-link:link{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.social-link:hover{
+    color: purple;
+    transition: ease 0.3s color;
+}
+/* copyright end */
+

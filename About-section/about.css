@@ -1,0 +1,46 @@
+.hero-bg{
+    background-color: #0a1a3b;
+}
+.about-heading{
+    color: #0a1a3b;
+}
+.lilita-font{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(90deg, #0a1a3b, #9747ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-img img{
+    width: 100%;
+}
+.img-text {
+    position: absolute;
+    transform: translateX(-90%);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background: #0a1a3b; /* optional */
+    border-radius: 4px;
+}
+
+.img-text.bottom {
+    bottom: -2%;
+    left: 98%;
+}
+
+
+/* cta */
+.cta-bg-deepBlue{
+    background-color: #0a1a3b;
+}
+.cta-bg-purple{
+    background-color: #9747ff;
+}
+.contact-us-cta:hover{
+    background-color: white;
+    color: #0a1a3b;
+    transition: ease 0.5s;
+}
+/* cta end */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-section {
+  position: relative;
+  height:200px;
+  overflow:hidden;
+  background-color:#123; /* optional: same as body for smooth blending */
+}
+
+/* container to clip the wave */
+.wave-container {
+  position: absolute;
+  inset: 0;   /* top:0; bottom:0; left:0; right:0 */
+  overflow:hidden;
+}
+
+.wave-container svg {
+  width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+  bottom:0;  /* keeps wave at bottom of hero */
+  left:0;
+}
+
+/* wave animation */
+use{
+  animation:move-forever 3s linear infinite;
+}
+
+use:nth-child(2){
+  animation-duration:3.5s;
+  animation-delay:-1.5s;
+}
+
+use:nth-child(1){
+  animation-duration:10s;
+}
+
+@keyframes move-forever{
+  0%{transform: translateX(-2px);}
+  100%{transform: translateX(0);}
+}
+
+
+    </style>
+</head>
+<body>
+        <section class="hero-section">
+    <div class="wave-container">
+        <svg viewBox="0 0 2 1" preserveAspectRatio="none">
+        <defs>
+            <path id="w" d="m0 1v-.5 q.5.5 1 0 t1 0 1 0 1 0 v.5z" />
+        </defs>
+        <g>
+            <use href="#w" y=".0" fill="#fffff" />
+            <use href="#w" y=".1" fill="#0a1a3b" />
+            <use href="#w" y=".2" fill="#fffff" />
+        </g>
+        </svg>
+    </div>
+    </section>
+</body>
+</html>
